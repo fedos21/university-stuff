@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.16"
+    ComputedModelVersion    "1.17"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -72,8 +72,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1820.0, 915.0]
-	ZoomFactor		[1.5]
-	Offset			[-494.57833485314717, -329.64834966309343]
+	ZoomFactor		[1.25]
+	Offset			[-534.57833485314711, -304.04387895281013]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -107,9 +107,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Asus"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Dec 10 02:47:37 2020"
-  RTWModifiedTimeStamp	  529469253
-  ModelVersionFormat	  "1.%<AutoIncrement:16>"
+  LastModifiedDate	  "Thu Dec 10 02:53:43 2020"
+  RTWModifiedTimeStamp	  529469510
+  ModelVersionFormat	  "1.%<AutoIncrement:17>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1069,7 +1069,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "30"
     Block {
@@ -1100,7 +1100,7 @@ Model {
       SID		      "20"
       Position		      [-100, -108, -15, -32]
       ZOrder		      8
-      Gain		      "0.2"
+      Gain		      "0.25"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1112,7 +1112,7 @@ Model {
       Position		      [340, -58, 425, 18]
       ZOrder		      9
       BlockMirror	      on
-      Gain		      "14"
+      Gain		      "141"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1136,7 +1136,7 @@ Model {
       Position		      [115, -58, 200, 18]
       ZOrder		      13
       BlockMirror	      on
-      Gain		      "0.1"
+      Gain		      "0.01"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1147,7 +1147,7 @@ Model {
       SID		      "28"
       Position		      [355, -193, 440, -117]
       ZOrder		      15
-      Gain		      "0.1"
+      Gain		      "0.01"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1158,7 +1158,7 @@ Model {
       SID		      "29"
       Position		      [170, -193, 255, -117]
       ZOrder		      16
-      Gain		      "10"
+      Gain		      "100"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1236,7 +1236,7 @@ Model {
       ZOrder		      14
       BlockMirror	      on
       NamePlacement	      "alternate"
-      Operator		      "round"
+      Operator		      "fix"
     }
     Block {
       BlockType		      Rounding
@@ -1245,7 +1245,7 @@ Model {
       Position		      [285, -170, 315, -140]
       ZOrder		      17
       NamePlacement	      "alternate"
-      Operator		      "round"
+      Operator		      "fix"
     }
     Block {
       BlockType		      Sum
