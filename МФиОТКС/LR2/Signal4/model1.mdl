@@ -1,12 +1,12 @@
 Model {
-  Name			  "recursive"
+  Name			  "model1"
   Version		  9.1
   SavedCharacterEncoding  "windows-1251"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.14"
+    ComputedModelVersion    "1.16"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -72,8 +72,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1820.0, 915.0]
-	ZoomFactor		[1.25]
-	Offset			[-438.01236172977713, -213.03882585356953]
+	ZoomFactor		[1.5]
+	Offset			[-494.57833485314717, -329.64834966309343]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -107,9 +107,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Asus"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Dec 10 02:29:45 2020"
-  RTWModifiedTimeStamp	  529468144
-  ModelVersionFormat	  "1.%<AutoIncrement:14>"
+  LastModifiedDate	  "Thu Dec 10 02:47:37 2020"
+  RTWModifiedTimeStamp	  529469253
+  ModelVersionFormat	  "1.%<AutoIncrement:16>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -165,11 +165,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "recursive"
+    model_		    "model1"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "recursive"
+      Cell		      "model1"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1053,7 +1053,7 @@ Model {
     }
   }
   System {
-    Name		    "recursive"
+    Name		    "model1"
     Location		    [54, -8, 1928, 1088]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -1069,16 +1069,16 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "15"
+    SIDHighWatermark	    "30"
     Block {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "1"
-      Position		      [-260, 7, -175, 83]
+      Position		      [-330, -83, -245, -7]
       ZOrder		      -1
-      Gain		      "-0.22"
+      Gain		      "-1"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1086,12 +1086,10 @@ Model {
     Block {
       BlockType		      Gain
       Name		      "Gain1"
-      SID		      "2"
-      Position		      [-15, 27, 90, 93]
-      ZOrder		      -2
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      Gain		      "0.01"
+      SID		      "19"
+      Position		      [-110, -268, -25, -192]
+      ZOrder		      6
+      Gain		      "0.5"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1099,12 +1097,68 @@ Model {
     Block {
       BlockType		      Gain
       Name		      "Gain2"
-      SID		      "11"
-      Position		      [185, 27, 290, 93]
-      ZOrder		      2
+      SID		      "20"
+      Position		      [-100, -108, -15, -32]
+      ZOrder		      8
+      Gain		      "0.2"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain3"
+      SID		      "22"
+      Position		      [340, -58, 425, 18]
+      ZOrder		      9
       BlockMirror	      on
-      NamePlacement	      "alternate"
-      Gain		      "74"
+      Gain		      "14"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain4"
+      SID		      "23"
+      Position		      [310, 67, 395, 143]
+      ZOrder		      10
+      BlockMirror	      on
+      Gain		      "-1"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain5"
+      SID		      "26"
+      Position		      [115, -58, 200, 18]
+      ZOrder		      13
+      BlockMirror	      on
+      Gain		      "0.1"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain6"
+      SID		      "28"
+      Position		      [355, -193, 440, -117]
+      ZOrder		      15
+      Gain		      "0.1"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain7"
+      SID		      "29"
+      Position		      [170, -193, 255, -117]
+      ZOrder		      16
+      Gain		      "10"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1114,22 +1168,50 @@ Model {
       Name		      "Integer Delay"
       SID		      "4"
       Ports		      [1, 1]
-      Position		      [-302, -85, -268, -50]
+      Position		      [-372, -175, -338, -140]
       ZOrder		      -4
       BlockRotation	      270
       BlockMirror	      on
       NamePlacement	      "alternate"
       InputPortMap	      "u0"
-      DelayLength	      "5"
+      DelayLength	      "8"
       InputProcessing	      "Inherited"
     }
     Block {
       BlockType		      Delay
       Name		      "Integer Delay1"
-      SID		      "5"
+      SID		      "21"
       Ports		      [1, 1]
-      Position		      [338, -20, 372, 15]
-      ZOrder		      -5
+      Position		      [-172, -175, -138, -140]
+      ZOrder		      7
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      InputPortMap	      "u0"
+      DelayLength	      "1"
+      InputProcessing	      "Inherited"
+    }
+    Block {
+      BlockType		      Delay
+      Name		      "Integer Delay2"
+      SID		      "24"
+      Ports		      [1, 1]
+      Position		      [468, 20, 502, 55]
+      ZOrder		      11
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      InputPortMap	      "u0"
+      DelayLength	      "1"
+      InputProcessing	      "Inherited"
+    }
+    Block {
+      BlockType		      Delay
+      Name		      "Integer Delay3"
+      SID		      "25"
+      Ports		      [1, 1]
+      Position		      [468, -115, 502, -80]
+      ZOrder		      12
       BlockRotation	      270
       BlockMirror	      on
       NamePlacement	      "alternate"
@@ -1142,17 +1224,26 @@ Model {
       Name		      "Pulse\nGenerator"
       SID		      "6"
       Ports		      [0, 1]
-      Position		      [-375, -172, -330, -138]
+      Position		      [-445, -247, -400, -213]
       ZOrder		      -6
       Period		      "100"
     }
     Block {
       BlockType		      Rounding
       Name		      "Rounding\nFunction"
-      SID		      "10"
-      Position		      [120, 45, 150, 75]
-      ZOrder		      1
+      SID		      "27"
+      Position		      [270, -35, 300, -5]
+      ZOrder		      14
       BlockMirror	      on
+      NamePlacement	      "alternate"
+      Operator		      "round"
+    }
+    Block {
+      BlockType		      Rounding
+      Name		      "Rounding\nFunction1"
+      SID		      "30"
+      Position		      [285, -170, 315, -140]
+      ZOrder		      17
       NamePlacement	      "alternate"
       Operator		      "round"
     }
@@ -1160,12 +1251,26 @@ Model {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "7"
-      Ports		      [3, 1]
-      Position		      [-95, -160, -55, -120]
+      Ports		      [2, 1]
+      Position		      [-240, -250, -200, -210]
       ZOrder		      -7
       ShowName		      off
       IconShape		      "round"
-      Inputs		      "|+++"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      SID		      "16"
+      Ports		      [4, 1]
+      Position		      [45, -175, 85, -135]
+      ZOrder		      3
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++++"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1175,7 +1280,7 @@ Model {
       Name		      "To Workspace"
       SID		      "8"
       Ports		      [1]
-      Position		      [495, -155, 555, -125]
+      Position		      [595, -155, 655, -125]
       ZOrder		      -8
       VariableName	      "simout"
       MaxDataPoints	      "inf"
@@ -1190,35 +1295,19 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      3
-      SrcBlock		      "Gain1"
-      SrcPort		      1
-      Points		      [-55, 0]
-      DstBlock		      "Sum"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      4
-      SrcBlock		      "Integer Delay1"
-      SrcPort		      1
-      Points		      [0, 40]
-      DstBlock		      "Gain2"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      5
-      Labels		      [-1, 1]
       SrcBlock		      "Sum"
       SrcPort		      1
-      Points		      [405, 0]
+      Points		      [40, 0]
       Branch {
-	ZOrder			16
-	DstBlock		"Integer Delay1"
+	ZOrder			42
+	Labels			[1, 0]
+	DstBlock		"Gain1"
 	DstPort			1
       }
       Branch {
-	ZOrder			7
-	DstBlock		"To Workspace"
+	ZOrder			41
+	DstBlock		"Integer Delay1"
 	DstPort			1
       }
     }
@@ -1234,7 +1323,6 @@ Model {
       }
       Branch {
 	ZOrder			11
-	Points			[0, -2]
 	DstBlock		"Sum"
 	DstPort			1
       }
@@ -1243,22 +1331,123 @@ Model {
       ZOrder		      14
       SrcBlock		      "Gain"
       SrcPort		      1
-      Points		      [35, 0; 0, -168]
+      Points		      [20, 0]
       DstBlock		      "Sum"
       DstPort		      2
     }
     Line {
-      ZOrder		      27
-      SrcBlock		      "Rounding\nFunction"
+      ZOrder		      39
+      SrcBlock		      "Gain1"
       SrcPort		      1
-      DstBlock		      "Gain1"
+      Points		      [50, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      43
+      SrcBlock		      "Integer Delay1"
+      SrcPort		      1
+      Points		      [0, 65]
+      DstBlock		      "Gain2"
       DstPort		      1
     }
     Line {
-      ZOrder		      28
+      ZOrder		      44
       SrcBlock		      "Gain2"
       SrcPort		      1
+      Points		      [9, 0; 0, -61]
+      DstBlock		      "Sum1"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      47
+      SrcBlock		      "Gain3"
+      SrcPort		      1
       DstBlock		      "Rounding\nFunction"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      48
+      SrcBlock		      "Gain4"
+      SrcPort		      1
+      Points		      [-240, 0]
+      DstBlock		      "Sum1"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      49
+      SrcBlock		      "Integer Delay2"
+      SrcPort		      1
+      Points		      [0, 45]
+      DstBlock		      "Gain4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      50
+      SrcBlock		      "Integer Delay3"
+      SrcPort		      1
+      Points		      [0, 55]
+      Branch {
+	ZOrder			52
+	DstBlock		"Gain3"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			51
+	DstBlock		"Integer Delay2"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      56
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Gain7"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      61
+      SrcBlock		      "Gain5"
+      SrcPort		      1
+      Points		      [-69, 0]
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      62
+      SrcBlock		      "Rounding\nFunction"
+      SrcPort		      1
+      DstBlock		      "Gain5"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      63
+      SrcBlock		      "Gain6"
+      SrcPort		      1
+      Points		      [40, 0; 0, 15]
+      Branch {
+	ZOrder			58
+	DstBlock		"Integer Delay3"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			57
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      64
+      SrcBlock		      "Gain7"
+      SrcPort		      1
+      DstBlock		      "Rounding\nFunction1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      65
+      SrcBlock		      "Rounding\nFunction1"
+      SrcPort		      1
+      DstBlock		      "Gain6"
       DstPort		      1
     }
   }
