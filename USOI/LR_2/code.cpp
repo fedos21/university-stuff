@@ -50,7 +50,9 @@ public:
         std::ifstream input(name);
         input >> size;
         input >> path_from;
+        path_from -= 1;
         input >> path_to;
+        path_to   -= 1;
 
         allocate(size);
 
@@ -85,12 +87,12 @@ public:
     void outputMatrix(){
         std::cout << "D" << k << "  ";
         for(int i = 0; i < size; i++){
-            std::cout << " " << i << " ";
+            std::cout << " " << i+1 << " ";
         }
         std::cout << "  |   " ;
-        std::cout << "S" << k << "  ";
+        std::cout << "S" << k+1 << "  ";
         for(int i = 0; i < size; i++){
-            std::cout << " " << i << " ";
+            std::cout << " " << i+1 << " ";
         }
         std::cout << "\n";
 
@@ -107,13 +109,13 @@ public:
                 
             }
             std::cout << "   |   " ;
-            std::cout << i << " |";
+            std::cout << i+1 << " |";
             for(int j = 0; j < size; j++){
                 std::cout << std::setfill(' ');
                 if(S_matrix[i][j] == -1){
                     std::cout << " --";
                 } else {
-                    std::cout << std::setw(3) << S_matrix[i][j];
+                    std::cout << std::setw(3) << S_matrix[i][j] +1;
                 }
                 
             }
@@ -148,10 +150,10 @@ int main() {
         std::cout << "---------------------------------------------\n";
         matrix.outputMatrix();
     }
-    std::cout << "\nPath: " << matrix.path_from << " -> " << matrix.path_to << "\n";
+    std::cout << "\nPath: " << matrix.path_from + 1 << " -> " << matrix.path_to + 1<< "\n";
     std::vector<int> path = matrix.getPath();
     for(int p : path){
-        std::cout << p;
+        std::cout << p + 1;
         if(p != matrix.path_to){
             std::cout << " - ";
         }
