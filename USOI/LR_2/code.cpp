@@ -85,7 +85,7 @@ public:
     }
 
     void outputMatrix(){
-        std::cout << "D" << k << "  ";
+        std::cout << "D" << k+1 << "  ";
         for(int i = 0; i < size; i++){
             std::cout << " " << i+1 << " ";
         }
