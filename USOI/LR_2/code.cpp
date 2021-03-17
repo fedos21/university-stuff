@@ -97,7 +97,7 @@ public:
         std::cout << "\n";
 
         for(int i=0; i < size; i++){
-            std::cout << i << " |";
+            std::cout << i+1 << " |";
             for(int j = 0; j < size; j++){
                 std::cout << std::setfill(' ');
                 std::cout << std::setw(3);
