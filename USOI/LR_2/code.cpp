@@ -150,7 +150,7 @@ int main() {
         std::cout << "---------------------------------------------\n";
         matrix.outputMatrix();
     }
-    std::cout << "\nPath: " << matrix.path_from + 1 << " -> " << matrix.path_to + 1<< "\n";
+    std::cout << "\nPath: " << matrix.path_from + 1 << " -> " << matrix.path_to + 1<< " is:\n";
     std::vector<int> path = matrix.getPath();
     for(int p : path){
         std::cout << p + 1;
