@@ -514,10 +514,10 @@ int main() {
     std::cout << "\n";
     
     std::cout << "C'' table:\n";
-    std::cout << MatrixC.to_string_table_header(NODE_COUNT) << "\n";
+    std::cout << MatrixS.to_string_table_header(NODE_COUNT) << "\n";
     
     for(int i=0; i < NODE_COUNT; i++){
-        std::cout << MatrixC.to_string_table_row(i, NODE_COUNT) << "\n";
+        std::cout << MatrixS.to_string_table_row(i, NODE_COUNT) << "\n";
     }
 
     std::cout << "C table:\n";
@@ -528,7 +528,7 @@ int main() {
     }
 
     MatrixC.substract_paths(MatrixS);
-    std::cout << "X table \"X = C'' - C\" :\n";
+    std::cout << "X table \"X = C - C''\" :\n";
     std::cout << MatrixC.to_string_table_header(NODE_COUNT) << "\n";
     
     for(int i=0; i < NODE_COUNT; i++){
