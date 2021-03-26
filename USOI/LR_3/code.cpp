@@ -418,7 +418,7 @@ int main() {
     #endif
     std::cout << "\n";
 
-    std::cout << "All possible paths:\n";
+    //std::cout << "All possible paths:\n";
     
     #if BUILD_EXAMPLE
         std::vector<std::vector<int>> all_paths;
@@ -452,16 +452,16 @@ int main() {
         return a.size() < b.size();
     });
     
-    for(std::vector<int> vec : all_paths){
+    /* for(std::vector<int> vec : all_paths){
         for(int path : vec){
             std::cout << to_string_node_id(path) << " ";
         }
         std::cout << "\n";
-    }
+    } */
     
     std::cout << "----\n";
 
-    std::cout << "Starting table:\n";
+    std::cout << "Starting table: C = \n";
     std::cout << MatrixS.to_string_table_header(NODE_COUNT) << "\n";
     
     for(int i=0; i < NODE_COUNT; i++){
@@ -476,8 +476,11 @@ int main() {
             long thetha = MatrixS.mark_positive_negative_2(all_paths[i]);
 
             std::cout << "processing path:\n";
-            for(int path : all_paths[i]){
-                std::cout << to_string_node_id(path) << " ";
+            for(int j = 0; j < all_paths[i].size(); j++){
+                std::cout << to_string_node_id(all_paths[i][j]);
+                if(j < (all_paths[i].size()-1)){
+                    std::cout << " -> ";
+                }
             }
             std::cout << "\n";
 
@@ -490,7 +493,7 @@ int main() {
             MatrixS.modify_by_thetha(thetha);
             thetha_sum += thetha;
             
-            std::cout << "O= "<< thetha << "------\\/------\n";
+            std::cout << "Θ = "<< thetha << "\n";
             std::cout << MatrixS.to_string_table_header(NODE_COUNT) << "\n";
     
             for(int i=0; i < NODE_COUNT; i++){
@@ -508,7 +511,15 @@ int main() {
     #else
         MatrixC.buldByPassedArgs(PArgs);
     #endif
+    std::cout << "\n";
     
+    std::cout << "C'' table:\n";
+    std::cout << MatrixC.to_string_table_header(NODE_COUNT) << "\n";
+    
+    for(int i=0; i < NODE_COUNT; i++){
+        std::cout << MatrixC.to_string_table_row(i, NODE_COUNT) << "\n";
+    }
+
     std::cout << "C table:\n";
     std::cout << MatrixC.to_string_table_header(NODE_COUNT) << "\n";
     
@@ -517,14 +528,14 @@ int main() {
     }
 
     MatrixC.substract_paths(MatrixS);
-    std::cout << "X table:\n";
+    std::cout << "X table \"X = C'' - C\" :\n";
     std::cout << MatrixC.to_string_table_header(NODE_COUNT) << "\n";
     
     for(int i=0; i < NODE_COUNT; i++){
         std::cout << MatrixC.to_string_table_row(i, NODE_COUNT) << "\n";
     }
 
-    std::cout << "total: " << all_paths.size() << " used: "<< passed_paths << " thetha_sum: " << thetha_sum <<"\n";
+    std::cout /* << "total: " << all_paths.size() << " used: "<< passed_paths */ << " Θsum = " << thetha_sum <<"\n";
 
     std::cout << "\n\n\n\n";
     std::cout << "Ctrl+C to exit\n";
