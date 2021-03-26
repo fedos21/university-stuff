@@ -493,7 +493,7 @@ int main() {
             MatrixS.modify_by_thetha(thetha);
             thetha_sum += thetha;
             
-            std::cout << "Θ = "<< thetha << "\n";
+            std::cout << "Thetha = "<< thetha << "\n";
             std::cout << MatrixS.to_string_table_header(NODE_COUNT) << "\n";
     
             for(int i=0; i < NODE_COUNT; i++){
@@ -535,7 +535,7 @@ int main() {
         std::cout << MatrixC.to_string_table_row(i, NODE_COUNT) << "\n";
     }
 
-    std::cout /* << "total: " << all_paths.size() << " used: "<< passed_paths */ << " Θsum = " << thetha_sum <<"\n";
+    std::cout /* << "total: " << all_paths.size() << " used: "<< passed_paths */ << " Thetha_sum = " << thetha_sum <<"\n";
 
     std::cout << "\n\n\n\n";
     std::cout << "Ctrl+C to exit\n";
