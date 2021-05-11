@@ -1,0 +1,25 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+NOTES=0
+LCID=0x419 0x0 0x0 ; Русский
+REPORT=Yes
+CONTENTS=IDH_Creating
+TITLE=ФАИС
+CNT=fais.cnt
+COPYRIGHT=Справка ФАИС: версия 1.0
+CITATION=ФАИС 1.0
+TMPDIR=C:\VOROBYOV\PRIVATE\ОВСЯННИКОВ\05_07_04\ПРЕОБРАЗОВАНИЯ2\19_10_04
+HLP=fais.hlp
+
+[FILES]
+fais.rtf
+
+[MAP]
+IDH_crCommon=101
+IDH_crKolokol=2
+IDH_crSinus=1
+IDH_Introduction=100
+
+[FONTS]
+=Times New Roman CYR,16,204

@@ -1,0 +1,27 @@
+:Base fais.hlp
+:Title ФАИС
+1 Введение=IDH_Introduction
+1 Создание сигналов
+2 Общие положения=IDH_crCommon
+2 Синус=IDH_crSinus
+2 Колокол=IDH_crKolokol
+2 Прямоугольник=IDH_crPryamoug
+2 Треугольник=IDH_crTreug
+2 ИХ ФНЧ=IDH_crLPF
+2 ИХ Дифференциатора=IDH_crDiff
+2 ИХ Интегратора=IDH_crIntegr
+2 ИХ преобразователя Гильберта=IDH_crHilb
+2 Импорт из файла=IDH_crImport
+1 Преобразования и операции
+2 Общие положения=IDH_prCommon
+2 БПФ=IDH_prFFT
+2 ОБПФ=IDH_prIFFT
+2 Сдвиг=IDH_prShift
+2 Зеркало=IDH_prMirror
+2 Комплексное сопряжение=IDH_prComplSopr
+2 Экспорт=IDH_prExport
+2 Удаление=IDH_prDel
+2 Операции=IDH_prOper
+1 Просмотр и сохранение результатов
+2 Окно графиков=IDH_edGraphic
+2 Рабочее пространство=IDH_edWorkspace
